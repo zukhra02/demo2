@@ -1,0 +1,42 @@
+GET http://192.168.0.1:80/movies
+###
+
+
+
+POST http://192.168.0.1:80/movies
+Content-Type: application/json
+
+{
+  "title": "chairs",
+  "director": "Almodovar",
+  "year":"2024-03-12",
+  "genre":"comedy",
+  "language": "spanish",
+  "revenue": 12000000,
+  "agelimitation": true
+
+}
+
+###
+DELETE http://192.168.0.1:80/movies/3
+
+###
+
+PUT http://192.168.0.1:80/movies/2
+Content-Type: application/json
+
+
+{
+  "title": "PerfectCrime",
+  "director": "Hitchcock",
+  "year":"2024-03-12",
+  "genre":"crime",
+  "language": "spanish",
+  "revenue": 12000000,
+  "agelimitation": true
+
+}
+
+
+
+
